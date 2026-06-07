@@ -330,3 +330,14 @@ or redeploy through Portainer.
 * Secondary NAS replication
 
 ---
+
+'''
+docker run -d \
+  --name virtual-dsm \
+  --restart unless-stopped \
+  --privileged \
+  -p 5000:5000 \
+  -p 5001:5001 \
+  -v /mnt/heimlich_001/docker-data/docker/vdsm:/storage \
+  vdsm/virtual-dsm:latest
+'''
