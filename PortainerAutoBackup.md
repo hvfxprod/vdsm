@@ -331,7 +331,7 @@ or redeploy through Portainer.
 
 ---
 
-'''
+```text
 docker run -d \
   --name virtual-dsm \
   --restart unless-stopped \
@@ -340,4 +340,4 @@ docker run -d \
   -p 5001:5001 \
   -v /mnt/heimlich_001/docker-data/docker/vdsm:/storage \
   vdsm/virtual-dsm:latest
-'''
+```
